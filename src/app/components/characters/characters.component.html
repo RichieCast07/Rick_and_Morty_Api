@@ -1,0 +1,9 @@
+<div class="characters">
+    <h1>Rick and Morty Characters</h1>
+    <div class="character" *ngFor="let character of characters">
+        <img [src]="character.image" [alt]="character.name" />
+        <h3>{{ character.name }}</h3>
+        <p>Status: {{ character.status }}</p>
+        <p>Species: {{ character.species }}</p>
+    </div>
+</div>
