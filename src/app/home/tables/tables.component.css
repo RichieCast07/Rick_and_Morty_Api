@@ -1,0 +1,35 @@
+.content-table {
+    margin-top: 5vh;
+    display: grid;
+    justify-content: center;
+    width: 100vw;
+    height: auto;
+}
+
+.content-table .table {
+    width: 80vw;
+    border-collapse: collapse;
+    border: 0.1rem solid #000;
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+}
+
+.content-table .table th,
+.content-table .table td {
+    padding: 0.5rem 1rem;
+    text-align: left;
+    border: 0.1rem solid #000;
+}
+
+.content-table .table tbody tr:nth-child(odd) {
+    background-color: #fafafa;
+}
+
+.content-table .table tbody tr:nth-child(even) {
+    background-color: #eaeaea;
+}
+
+.content-table .table tbody tr:hover {
+    background-color: #d6d6d6;
+    transition: background-color 0.3s ease;
+}

@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TablesComponent } from './tables/tables.component';
+import { HttpClient } from '@angular/common/http';
+
 
 
 
@@ -9,7 +11,9 @@ import { TablesComponent } from './tables/tables.component';
     TablesComponent
   ],
   imports: [
-    CommonModule
-  ]
+    CommonModule,
+    HttpClient,
+  ],
+  exports: [ TablesComponent],
 })
 export class HomeModule { }
